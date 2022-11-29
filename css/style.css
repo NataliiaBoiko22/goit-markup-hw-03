@@ -33,15 +33,31 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+.section-card {
+  margin: 0 auto;
+  padding: 94px 0;
+  text-align: center;
+  background-color: var(--background-section);
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--dark-grey-color);
+  margin-bottom: 50px;
+}
+
 /* TODO header */
-
-.page-header {
+.header {
   background: var(--white-color);
-
+  border-bottom: 1px solid #ececec;
+}
+.page-header {
   display: flex;
 }
 
@@ -69,12 +85,13 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  align-items: center;
   gap: 50px;
 }
 .nav-li {
   text-decoration: none;
   color: var(--dark-grey-color);
+  padding: 32px 0;
 }
 
 .active,
@@ -86,8 +103,8 @@ body {
 }
 .auth-nav {
   display: flex;
-  margin: 32px 0;
   color: var(--dark-grey-color);
+  align-items: center;
 }
 .auth-nav li:last-child {
   margin-left: 50px;
@@ -99,6 +116,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--light-grey-color);
+  padding: 32px 0;
 }
 
 /* TODO main section */
@@ -144,13 +162,14 @@ body {
 }
 
 /* TODO features */
-.main-features-section {
-  margin: 0 auto;
-  background: var(--background-section);
-  padding: 94px 0;
+.features {
+  padding-bottom: 0;
 }
 .main-features {
   display: flex;
+}
+.main-features > li {
+  width: 270px;
 }
 .main-features li {
   list-style: none;
@@ -160,68 +179,54 @@ body {
 .main-features li:nth-child(3) {
   margin-right: 30px;
 }
-.features-title {
+h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   color: var(--dark-grey-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: left;
 }
 .features-par {
   line-height: 1.71;
   color: var(--light-grey-color);
-  margin-top: 10px;
+  text-align: left;
 }
 
 /* TODO images-row */
-.images-row {
-  padding-bottom: 94px;
-  text-align: center;
-  background-color: var(--background-section);
-}
+
 .images-boxes-row {
   display: flex;
   gap: 30px;
-}
-.images-row h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--dark-grey-color);
-  margin-bottom: 50px;
 }
 
 /* TODO team */
 
 .team {
   text-align: center;
+  padding: 94px 0;
   background: var(--background-team);
 }
 .card {
-  /* width: 270px; */
+  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-card-row {
   margin: 0;
-  padding-bottom: 94px;
   display: flex;
   gap: 30px;
   list-style: none;
   margin-top: 50px;
 }
-.team h2 {
-  padding-top: 94px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--dark-grey-color);
+
+.about-member {
+  margin: 30px 10px;
 }
+
 .name-member {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -229,7 +234,6 @@ body {
   color: var(--dark-grey-color);
 }
 .prof {
-  margin: 10px auto 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -238,27 +242,26 @@ body {
 /* TODO footer */
 .footer {
   background: var(--background-h-f);
+  padding: 60px 0;
 }
 
 .logo .logo_part_footer {
   display: inline-block;
   color: var(--white-color);
-  margin-top: 60px;
 }
 .address {
   font-style: normal;
+  margin-top: 20px;
 }
+
 .address-li-block {
   display: block;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 60px;
 }
-
-.address-li {
-  line-height: 1.71;
-  color: var(--white-color);
+.address-li-mail,
+.address-li-tel {
   margin-top: 10px;
 }
 .footer-nav-li {
@@ -331,16 +334,19 @@ body {
 .portfolio_card {
   background: var(--white-color);
 }
+.about-portfolio-card {
+  margin: 20px 24px;
+}
 .portfolio_card h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--dark-grey-color);
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
+  text-align: left;
 }
 .portfolio_card > p {
-  margin: 0 24px 20px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--light-grey-color);

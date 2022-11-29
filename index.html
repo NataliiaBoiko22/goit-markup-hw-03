@@ -12,8 +12,8 @@
       rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
@@ -21,7 +21,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container page-header">
         <nav class="nav-header">
           <a href="./index.html" class="logo"
@@ -60,31 +60,31 @@
           <button type="button" class="btn-primary">Замовити послугу</button>
         </div>
       </section>
-      <section class="main-features-section">
+      <section class="section-card features">
         <div class="container">
           <ul class="main-features">
             <li>
-              <h2 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features-par">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
-              <h2 class="features-title">ПУНКТУАЛЬНІСТЬ</h2>
+              <h3>ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features-par">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li>
-              <h2 class="features-title">ПЛАНУВАННЯ</h2>
+              <h3>ПЛАНУВАННЯ</h3>
               <p class="features-par">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
-              <h2 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features-par">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -94,7 +94,7 @@
         </div>
       </section>
 
-      <section class="images-row">
+      <section class="section-card">
         <div class="container">
           <h2>Чим ми займаємося</h2>
           <ul class="images-boxes-row">
@@ -110,7 +110,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="section-card team">
         <div class="container">
           <h2>Наша команда</h2>
           <ul class="team-card-row">
@@ -119,26 +119,34 @@
                 src="./images/person1.jpg"
                 alt="ProductDesigner"
                 width="270" />
-              <h3 class="name-member">Ігор Дем'яненко</h3>
-              <p class="prof">Product Designer</p>
+              <div class="about-member">
+                <h3 class="name-member">Ігор Дем'яненко</h3>
+                <p class="prof">Product Designer</p>
+              </div>
             </li>
             <li class="card">
               <img
                 src="./images/person2.jpg"
                 alt="Frontend Developer"
                 width="270" />
-              <h3 class="name-member">Ольга Рєпіна</h3>
-              <p class="prof">Frontend Developer</p>
+              <div class="about-member">
+                <h3 class="name-member">Ольга Рєпіна</h3>
+                <p class="prof">Frontend Developer</p>
+              </div>
             </li>
             <li class="card">
               <img src="./images/person3.jpg" alt="Marketing" width="270" />
-              <h3 class="name-member">Микола Тарасов</h3>
-              <p class="prof">Marketing</p>
+              <div class="about-member">
+                <h3 class="name-member">Микола Тарасов</h3>
+                <p class="prof">Marketing</p>
+              </div>
             </li>
             <li class="card">
               <img src="./images/person4.jpg" alt="UIDesigner" width="270" />
-              <h3 class="name-member">Михайло Єрмаков</h3>
-              <p class="prof">UI Designer</p>
+              <div class="about-member">
+                <h3 class="name-member">Михайло Єрмаков</h3>
+                <p class="prof">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -151,13 +159,21 @@
         >
         <address class="address" id="contacts">
           <ul class="address-li-block">
-            <li class="address-li">м. Київ, пр-т Лесі Українки, 26</li>
             <li class="address-li">
+              <a
+                href="https://www.google.com/maps/place/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-nav-li"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address-li-mail">
               <a href="mailto:info@devstudio.com" class="footer-nav-li"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-li">
+            <li class="address-li-tel">
               <a href="tel:+380961111111" class="footer-nav-li"
                 >+380961111111</a
               >

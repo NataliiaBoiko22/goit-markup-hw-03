@@ -11,15 +11,15 @@
       rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container page-header">
         <nav class="nav-header">
           <a href="./index.html" class="logo"
@@ -30,7 +30,7 @@
               <a href="./index.html" class="nav-li">Студія</a>
             </li>
             <li>
-              <a href="#" class="nav-li active">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-li active">Портфоліо</a>
             </li>
             <li>
               <a href="#contacts" class="nav-li">Контакти</a>
@@ -39,12 +39,12 @@
         </nav>
         <ul class="auth-nav">
           <li>
-            <a href="mailto:info@devstudio.com" class="auth-nav-li"
+            <a href="mailto:info@devstudio.com" class="auth-nav-item"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="auth-nav-li">+380961111111</a>
+            <a href="tel:+380961111111" class="auth-nav-item">+380961111111</a>
           </li>
         </ul>
       </div>
@@ -79,48 +79,66 @@
             <ul class="card_table">
               <li class="portfolio_card">
                 <img src="./images/img1.jpg" width="370" alt="card1" />
-                <h2>Технокряк</h2>
-                <p>Веб-сайт</p>
+                <div class="about-portfolio-card">
+                  <h2>Технокряк</h2>
+                  <p>Веб-сайт</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img2.jpg" width="370" alt="card2" />
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
+                <div class="about-portfolio-card">
+                  <h2>Постер New Orlean vs Golden Star</h2>
+                  <p>Дизайн</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img3.jpg" width="370" alt="card3" />
-                <h2>Ресторан Seafood</h2>
-                <p>Додаток</p>
+                <div class="about-portfolio-card">
+                  <h2>Ресторан Seafood</h2>
+                  <p>Додаток</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img4.jpg" width="370" alt="card4" />
-                <h2>Проєкт Prime</h2>
-                <p>Маркетинг</p>
+                <div class="about-portfolio-card">
+                  <h2>Проєкт Prime</h2>
+                  <p>Маркетинг</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img5.jpg" width="370" alt="card5" />
-                <h2>Проєкт Boxes</h2>
-                <p>Додаток</p>
+                <div class="about-portfolio-card">
+                  <h2>Проєкт Boxes</h2>
+                  <p>Додаток</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img6.jpg" width="370" alt="card6" />
-                <h2>Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
+                <div class="about-portfolio-card">
+                  <h2>Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img7.jpg" width="370" alt="card7" />
-                <h2>Видання Limited Edition</h2>
-                <p>Дизайн</p>
+                <div class="about-portfolio-card">
+                  <h2>Видання Limited Edition</h2>
+                  <p>Дизайн</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img8.jpg" width="370" alt="card8" />
-                <h2>Проєкт LAB</h2>
-                <p>Маркетинг</p>
+                <div class="about-portfolio-card">
+                  <h2>Проєкт LAB</h2>
+                  <p>Маркетинг</p>
+                </div>
               </li>
               <li class="portfolio_card">
                 <img src="./images/img9.jpg" width="370" alt="card9" />
-                <h2>Growing Business</h2>
-                <p>Додаток</p>
+                <div class="about-portfolio-card">
+                  <h2>Growing Business</h2>
+                  <p>Додаток</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -135,13 +153,21 @@
         >
         <address class="address" id="contacts">
           <ul class="address-li-block">
-            <li class="address-li">м. Київ, пр-т Лесі Українки, 26</li>
             <li class="address-li">
+              <a
+                href="https://www.google.com/maps/place/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-nav-li"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address-li-mail">
               <a href="mailto:info@devstudio.com" class="footer-nav-li"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-li">
+            <li class="address-li-tel">
               <a href="tel:+380961111111" class="footer-nav-li"
                 >+380961111111</a
               >
